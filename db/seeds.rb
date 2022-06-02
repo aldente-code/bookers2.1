@@ -25,4 +25,8 @@ User.create!(
         user_id: 1
         )
 end
+Favorite.create!(
+    user_id: 1,
+    book_id: 1,
+)
 
