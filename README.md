@@ -1,24 +1,21 @@
-# README
+# 新人研修 4 回目用デバッグアプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+下記ブランチ、全 6 問のエラーが含まれています。
 
-Things you may want to cover:
+```
+$git branch
+* main
+  1
+  2
+  3
+  4
+```
 
-* Ruby version
+### Clone するとき
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+git clone https://github.com/trainer-team/trainig4_bookers2-.git
+$ cd trainig4_bookers2-
+$ git branch -r | grep -v "\->" | grep -v main | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+$ git checkout ~~~
+```
